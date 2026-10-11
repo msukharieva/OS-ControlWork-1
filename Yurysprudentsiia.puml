@@ -1,0 +1,49 @@
+@startuml
+hide circle
+
+class "Юрист" as Actor
+class "Провадження" as Aggregate
+class "Документ" as Part
+
+Actor "1" --> "*" Aggregate : увійти
+note on link
+  Bash: cd
+end note
+
+Actor "1" --> "*" Aggregate : сформувати
+note on link
+  Bash: mkdir
+end note
+
+Actor "1" --> "*" Aggregate : оглянути
+note on link
+  Bash: ls
+end note
+
+Actor "1" --> "*" Aggregate : опечатати
+note on link
+  Bash: немає
+end note
+
+Actor "1" --> "*" Part : підготувати
+note on link
+  Bash: touch
+end note
+
+Actor "1" --> "*" Part : вивчити
+note on link
+  Bash: cat
+end note
+
+Actor "1" --> "*" Part : продублювати
+note on link
+  Bash: cp
+end note
+
+Actor "1" --> "*" Part : завірити
+note on link
+  Bash: nano
+end note
+
+Aggregate "1" o-- "*" Part
+@enduml
