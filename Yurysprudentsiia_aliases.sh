@@ -1,0 +1,7 @@
+alias uviyty='cd'
+alias sformuvaty='mkdir'
+alias ohlyanuty='ls'
+alias pidhotuvaty='touch'
+alias vyvchyty='cat'
+alias produblyuvaty='cp'
+alias zaviryty='nano'
